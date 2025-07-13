@@ -9,86 +9,278 @@
     />
     <link rel="shortcut icon" type="image/webp" href="./img/shate-img.webp" />
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&family=Poppins:wght@400;500;600;900&family=Roboto:wght@400;500&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&family=Poppins:wght@400;500;600;900&family=Roboto:wght@400;500&display=swap"
+    /></noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://use.fontawesome.com/releases/v6.5.2/js/all.js"
+      defer
+    ></script>
     <title>WebNexus</title>
   </head>
   <body>
     <!-- topo -->
     <header class="header">
-      <div class="content">
-        <!-- logo -->
-        <div class="logo">
-          <div class="logo-shate">
-            <img
-              class="shate-logo"
-              src="./img/shate-logo.webp"
-              alt="shate-logo"
-            />
-          </div>
+      <!-- logo -->
+      <div class="logo">
+        <div class="logo-shate">
+          <img class="shate-logo" src="./img/download.png" alt="shate-logo" />
         </div>
-        <!-- menu -->
-        <nav class="navigation" id="nav">
-          <ul class="nav-itens">
-            <li><a class="nav-item" href="#description">Benefícios</a></li>
-            <li><a class="nav-item" href="#testimonial">Avaliações</a></li>
-            <li><a class="nav-item" href="#card">Blog</a></li>
-            <li><a class="nav-item" href="#service">Ajuda</a></li>
-            <li class="mobile-button">
-              <div class="button-mobile">
-                <a class="nav-item btn" href="#">Comece aqui</a>
-              </div>
-            </li>
-          </ul>
-        </nav>
-        <div class="button">
-          <a class="btn" href="#">Comece aqui</a>
-        </div>
-        <div class="bars" id="bars">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
+      </div>
+      <!-- menu -->
+      <nav class="navigation" id="nav">
+        <ul class="nav-itens">
+          <li>
+            <a class="nav-item" id="nav-item" href="#description">Benefícios</a>
+          </li>
+          <li>
+            <a class="nav-item" id="nav-item" href="#testimonial">Avaliações</a>
+          </li>
+          <li><a class="nav-item" id="nav-item" href="#card">Blog</a></li>
+          <li><a class="nav-item" id="nav-item" href="#service">Ajuda</a></li>
+          <li class="mobile-button">
+            <div class="button-mobile">
+              <a class="nav-item btn" href="#">Comece aqui</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- <div class="button">
+        <a class="btn" href="#">Comece aqui</a>
+      </div> -->
+      <div class="bars" id="bars">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
     </header>
     <!-- corpo -->
     <main>
       <!-- banner  -->
       <section class="banner">
-        <div class="banner-content">
-          <div class="banner-title">
-            <h1 class="title-banner">
-              WebNexus Desenvolvimento Web Ágil e Eficiente
-            </h1>
-          </div>
-          <div class="banner-text">
-            <p class="text-banner">
-              Especialistas em criação de sites responsivos, otimizados e
-              focados em performance e conversão
-            </p>
-          </div>
-          <div class="banner-button">
-            <a class="btn-banner" href="#">Solicite um Orçamento</a>
-          </div>
-          <div class="banner-img">
-            <div class="img-banner">
-              <img class="img-chat" src="./img/Designers.png" alt="designers" />
+        <div class="banner-wrapper">
+          <div class="banner-content">
+            <div class="banner-text">
+              <h1 class="title-banner">
+                WebNexus Desenvolvimento Web Ágil e Eficiente
+              </h1>
+
+              <p class="text-banner">
+                <strong class="text-banner-strong"
+                  >Criamos seu site com SEO 100% otimizado. Se não alcançar
+                  100%, você não paga!</strong
+                >
+                <br />
+
+                Nosso compromisso é desenvolver um site moderno, responsivo e
+                com máxima performance em SEO, garantindo qualidade em cada
+                detalhe.
+              </p>
+              <span class="button-banner">
+                <a class="btn-banner" href="#">Solicite um Orçamento</a>
+              </span>
+            </div>
+
+            <div class="banner-img">
+              <!-- <div class="img-banner"> -->
+              <!-- <img class="img-chat" src="./img/Designers.png" alt="designers" /> -->
+              <!-- </div> -->
+
+              <div class="progresso-circular">
+                <div class="porcentagem">0%</div>
+              </div>
             </div>
           </div>
         </div>
+        <span class="border-header"></span>
       </section>
+
       <!-- introduction -->
       <section class="introduction">
         <div class="introduction-content">
-          <div class="introduction-title">
-            <h1 class="title-introduction">
-              Transformamos ideias em sites de alto impacto
-            </h1>
-          </div>
+          <h1 class="title-introduction">
+            Transformamos ideias em sites de alto impacto
+          </h1>
           <div class="introduction-text">
             <p class="text-introduction">
               Na WebNexus, nosso serviço vai além do desenvolvimento de sites,
               criamos soluções digitais que conectam marcas ao seu público de
               forma eficiente, moderna e estratégica.
             </p>
+          </div>
+          <!-- <section class="advantages">
+            <h2 class="title-advantages">Por que escolher a WebNexus?</h2>
+            <div class="cards-container-advantages">
+              <div class="card-advantages">
+                <h3>SEO de Qualidade</h3>
+                <p>
+                  Seu site otimizado para aparecer no topo das buscas do Google.
+                </p>
+              </div>
+              <div class="card-advantages">
+                <h3>Acessibilidade</h3>
+                <p>
+                  Sites acessíveis para todos, respeitando padrões modernos da
+                  web.
+                </p>
+              </div>
+              <div class="card-advantages">
+                <h3>Configuração Inteligente</h3>
+                <p>
+                  Configurações técnicas para destacar seu site nos resultados
+                  de pesquisa.
+                </p>
+              </div>
+              <div class="card-advantages">
+                <h3>100% Responsivo</h3>
+                <p>Funciona perfeitamente em celulares, tablets e desktops.</p>
+              </div>
+              <div class="card-advantages">
+                <h3>Formulários & WhatsApp</h3>
+                <p>
+                  Facilidade no contato com envio direto por formulários ou
+                  WhatsApp.
+                </p>
+              </div>
+              <div class="card-advantages">
+                <h3>Desempenho</h3>
+                <p>
+                  Sites leves e rápidos, desenvolvidos com código limpo e
+                  otimizado.
+                </p>
+              </div>
+              <div class="card-advantages">
+                <h3>Sem Mensalidade</h3>
+                <p>Você paga uma única vez. Sem cobranças mensais.</p>
+              </div>
+            </div>
+          </section> -->
+
+          <div class="advantage-container">
+            <div class="advantage-card">
+              <div class="circular-progress">
+                <div class="percentage">0%</div>
+              </div>
+
+              <div class="advantage-header">
+                <h2 class="title-advantage-card">SEO de Qualidade</h2>
+                <article class="advantage-icon">
+                  <!-- <i class="fa-thin fa-chart-line-up"></i> -->
+                </article>
+              </div>
+
+              <div class="advantage-content">
+                <p>
+                  Seu site otimizado para alcançar 100% em SEO e aparecer no
+                  topo das buscas.
+                </p>
+              </div>
+            </div>
+
+            <div class="advantage-card">
+              <div class="circular-progress">
+                <div class="percentage">0%</div>
+              </div>
+              <div class="advantage-header">
+                <h2 class="title-advantage-card">Acessibilidade</h2>
+                <article class="advantage-icon">
+                  <!-- <i class="fa-thin fa-universal-access"></i> -->
+                </article>
+              </div>
+              <div class="advantage-content">
+                <p>
+                  Sites acessíveis a todos os usuários, com foco em usabilidade
+                  e inclusão.
+                </p>
+              </div>
+            </div>
+
+            <div class="advantage-card">
+              <div class="circular-progress">
+                <div class="percentage">0%</div>
+              </div>
+              <div class="advantage-header">
+                <h2 class="title-advantage-card">Configuração Técnica</h2>
+                <article class="advantage-icon">
+                  <!-- <i class="fa-thin fa-sliders-up"></i> -->
+                </article>
+              </div>
+              <div class="advantage-content">
+                <p>
+                  Configurações avançadas para destacar seu site nas primeiras
+                  posições do Google.
+                </p>
+              </div>
+            </div>
+
+            <div class="advantage-card">
+              <div class="circular-progress">
+                <div class="percentage">0%</div>
+              </div>
+              <div class="advantage-header">
+                <h2 class="title-advantage-card">Design Responsivo</h2>
+                <article class="advantage-icon">
+                  <!-- <i class="fa-thin fa-mobile"></i> -->
+                </article>
+              </div>
+
+              <div class="advantage-content">
+                <p>
+                  Seu site adaptado para todos os dispositivos: celular, tablet
+                  e desktop.
+                </p>
+              </div>
+            </div>
+
+            <div class="advantage-card">
+              <div class="circular-progress">
+                <div class="percentage">0%</div>
+              </div>
+              <div class="advantage-header">
+                <h2 class="title-advantage-card">Alto Desempenho</h2>
+                <article class="advantage-icon">
+                  <!-- <i class="fa-thin fa-gauge-max"></i> -->
+                </article>
+              </div>
+              <div class="advantage-content">
+                <p>
+                  Sites com carregamento rápido, graças a um código limpo e
+                  otimizado.
+                </p>
+              </div>
+            </div>
+
+            <div class="advantage-card">
+              <div class="circular-progress">
+                <div class="percentage">0%</div>
+              </div>
+              <div class="advantage-header">
+                <h2 class="title-advantage-card">Sem Mensalidade</h2>
+                <article class="advantage-icon">
+                  <!-- <i class="fa-thin fa-money-bill-wave"></i> -->
+                </article>
+              </div>
+              <!--  -->
+              <div class="advantage-content">
+                <p>
+                  Você paga uma única vez pela entrega. Sem taxas ou
+                  mensalidades futuras.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -103,7 +295,7 @@
               <div class="description-img">
                 <img
                   class="img-description"
-                  src="./img/shate-logo.webp"
+                  src="./img/download.png"
                   alt="shate-logo"
                 />
               </div>
@@ -123,86 +315,12 @@
           </div>
         </div>
       </section>
-      <!-- testimonial -->
-      <section class="testimonial" id="testimonial">
-        <div class="testimonial-content">
-          <div class="testimonial-title">
-            <h1 class="title-testimonial">Nossos clientes recomendam</h1>
-          </div>
-          <div class="testimonial-text">
-            <p class="text-testimonial">
-              Nossos parceiros confirmam que o Shate é a solução para fazer oseu
-              negócio melhor
-            </p>
-          </div>
-          <div class="testimonials-texts">
-            <article class="testimonials-text">
-              <h2 class="testimonial-titles">
-                Excelência em Atendimento Corporativo!
-              </h2>
-              <p class="testimonial-texts">
-                Com a Shate, nossa experiência com serviços B2B foi
-                transformada. Eles lidaram com nossas demandas corporativas com
-                uma eficiência e profissionalismo que nunca vimos antes. O
-                compromisso deles com a qualidade e a satisfação do cliente é
-                evidente em cada interação. Recomendamos a Shate para qualquer
-                empresa que busca elevar seu nível de atendimento ao cliente.
-              </p>
-              <img
-                class="imgs-testimonial"
-                src="./img/pessoa-1.webp"
-                alt="pessoa-1"
-              />
-              <h3 class="subtitles-testimonial">Marilda Ramos</h3>
-            </article>
-            <article class="testimonials-text">
-              <h2 class="testimonial-titles">
-                Excelência em Atendimento Corporativo!
-              </h2>
-              <p class="testimonial-texts">
-                Com a Shate, nossa experiência com serviços B2B foi
-                transformada. Eles lidaram com nossas demandas corporativas com
-                uma eficiência e profissionalismo que nunca vimos antes. O
-                compromisso deles com a qualidade e a satisfação do cliente é
-                evidente em cada interação. Recomendamos a Shate para qualquer
-                empresa que busca elevar seu nível de atendimento ao cliente.
-              </p>
-              <img
-                class="imgs-testimonial"
-                src="./img/pessoa-2.webp"
-                alt="pessoa-2"
-              />
-              <h3 class="subtitles-testimonial">João Guilherme</h3>
-            </article>
-            <article class="testimonials-text">
-              <h2 class="testimonial-titles">
-                Excelência em Atendimento Corporativo!
-              </h2>
-              <p class="testimonial-texts">
-                Com a Shate, nossa experiência com serviços B2B foi
-                transformada. Eles lidaram com nossas demandas corporativas com
-                uma eficiência e profissionalismo que nunca vimos antes. O
-                compromisso deles com a qualidade e a satisfação do cliente é
-                evidente em cada interação. Recomendamos a Shate para qualquer
-                empresa que busca elevar seu nível de atendimento ao cliente.
-              </p>
-              <img
-                class="imgs-testimonial"
-                src="./img/pessoa-3.webp"
-                alt="pessoa-3"
-              />
-              <h3 class="subtitles-testimonial">Henrique Lima</h3>
-            </article>
-          </div>
-        </div>
-      </section>
+
       <!-- brands -->
       <section class="brands">
         <div class="brands-content">
           <div class="brand-title">
-            <h1 class="title-brand">
-              Marcas que estão atendendo melhor conosco
-            </h1>
+            <h1 class="title-brand">Entre em contato conosco</h1>
           </div>
           <div class="brand-image">
             <div class="brand-img">
@@ -212,7 +330,7 @@
         </div>
       </section>
       <!-- cards -->
-      <section class="card" id="card">
+      <!-- <section class="card" id="card">
         <div class="card-content">
           <div class="card-title">
             <h1 class="title-card">Tenha grandes insights</h1>
@@ -284,11 +402,11 @@
             </article>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- service -->
       <section class="service" id="service">
         <div class="service-content">
-          <div class="image-shate">
+          <!-- <div class="image-shate">
             <div class="shate-img">
               <img
                 class="img-shate"
@@ -296,7 +414,7 @@
                 alt="shate-img"
               />
             </div>
-          </div>
+          </div> -->
           <div class="service-card">
             <div class="service-texts">
               <div class="service-texts-content">
@@ -319,6 +437,75 @@
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <!-- testimonial -->
+      <section class="testimonial" id="testimonial">
+        <div class="testimonial-content">
+          <div class="testimonial-title">
+            <h1 class="title-testimonial">Avaliações de nossos clientes</h1>
+          </div>
+          <div class="testimonial-text">
+            <p class="text-testimonial">
+              Nossos clientes confirmam que a WebNexus é a solução para fazer o
+              seu negócio melhor
+            </p>
+          </div>
+          <div class="testimonials-texts">
+            <article class="testimonials-text">
+              <h2 class="testimonial-titles">
+                Aumento nas vendas depois do novo site
+              </h2>
+              <p class="testimonial-texts">
+                A equipe da WebNexus foi simplesmente incrível do início ao fim.
+                Explicaram cada etapa com clareza e entregaram um site moderno,
+                responsivo e totalmente alinhado com a identidade da minha
+                marca. O suporte pós-lançamento também foi impecável. Recomendo
+                de olhos fechados!
+              </p>
+              <img
+                class="imgs-testimonial"
+                src="./img/pessoa-1.webp"
+                alt="pessoa-1"
+              />
+              <h3 class="subtitles-testimonial">Lucas Lima</h3>
+            </article>
+            <article class="testimonials-text">
+              <h2 class="testimonial-titles">
+                Profissionalismo e criatividade.
+              </h2>
+              <p class="testimonial-texts">
+                Precisava de um site para divulgar meus serviços e a WebNexus
+                superou minhas expectativas. Além de serem muito profissionais,
+                trouxeram ideias criativas que fizeram meu site se destacar.
+                Entrega rápida, ótimo custo-benefício e atendimento excelente.
+              </p>
+              <img
+                class="imgs-testimonial"
+                src="./img/pessoa-2.webp"
+                alt="pessoa-2"
+              />
+              <h3 class="subtitles-testimonial">Junior Martins</h3>
+            </article>
+            <article class="testimonials-text">
+              <h2 class="testimonial-titles">
+                WebNexus é o parceiro ideal para startups
+              </h2>
+              <p class="testimonial-texts">
+                Escolhemos a WebNexus para criar nosso site institucional e foi
+                a melhor decisão. Eles entenderam perfeitamente o que
+                precisávamos, com foco em performance e design moderno. O
+                resultado ficou incrível e já estamos colhendo os frutos com
+                mais visitas e conversões.
+              </p>
+              <img
+                class="imgs-testimonial"
+                src="./img/pessoa-3.webp"
+                alt="pessoa-3"
+              />
+              <h3 class="subtitles-testimonial">Henrique Lima</h3>
+            </article>
           </div>
         </div>
       </section>
